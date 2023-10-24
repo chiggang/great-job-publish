@@ -1,0 +1,92 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "email": "test@test.com",
+      "password": "1",
+      "name": "Test",
+      "available": "Y"
+    },
+    {
+      "id": 2,
+      "email": "test2@test.com",
+      "password": "1",
+      "name": "Test2",
+      "available": "N"
+    }
+  ],
+  "company": [
+    {
+      "id": 1,
+      "name": "네이버",
+      "ceo": ["최수연"],
+      "businessNumber": "220-81-62517",
+      "corporationNumber": "110111-1707178",
+      "businessType": "법인",
+      "businessClass": "서비스",
+      "zipcode": "13561",
+      "address": "경기도 성남시 분당구 정자일로 95",
+      "detailAddress": "네이버 1784",
+      "lat": 37.3588478,
+      "lng": 127.1051678,
+      "tel": "1588-3820",
+      "fax": "031-784-4175",
+      "employee": 4221,
+      "image": [1, 2, 3],
+      "description": "네이버입니다.",
+      "homepage": "https://www.naver.com",
+      "twitter": "https://www.twitter.com/naver",
+      "instagram": "https://www.instagram.com/naver",
+      "facebook": "https://www.facebook.com/naver",
+      "tag": ["IT"]
+    },
+    {
+      "id": 2,
+      "name": "카카오",
+      "ceo": ["홍은택"],
+      "businessNumber": "120-81-47521",
+      "corporationNumber": "110111-1129497",
+      "businessType": "법인",
+      "businessClass": "서비스",
+      "zipcode": "63309",
+      "address": "제주특별자치도 제주시 첨단로 242",
+      "detailAddress": "1층",
+      "latitude": 33.4502221,
+      "longitude": 126.5701423,
+      "tel": "02-1899-1326",
+      "fax": "02-6003-5401",
+      "employee": 3826,
+      "image": [11, 22, 33],
+      "description": "카카오입니다.",
+      "homepage": "https://www.kakao.com",
+      "twitter": "https://www.twitter.com/kakao",
+      "instagram": "https://www.instagram.com/kakao",
+      "facebook": "https://www.facebook.com/kakao",
+      "tag": ["IT"]
+    },
+    {
+      "id": 3,
+      "name": "교보문고",
+      "ceo": ["안병현"],
+      "businessNumber": "102-81-11670",
+      "corporationNumber": "110111-0286058",
+      "businessType": "법인",
+      "businessClass": "도매 및 소매업",
+      "zipcode": "03154",
+      "address": "서울특별시 종로구 종로1가",
+      "detailAddress": "교보빌딩",
+      "latitude": 37.5711001,
+      "longitude": 126.9778075,
+      "tel": "1544-1900",
+      "fax": "0502-987-5712",
+      "employee": 1825,
+      "image": [1, 2],
+      "description": "교보문고입니다.",
+      "homepage": "https://www.kyobobook.co.kr",
+      "twitter": "",
+      "instagram": "",
+      "facebook": "",
+      "tag": ["책", "도서", "서점"]
+    }
+  ]
+}
