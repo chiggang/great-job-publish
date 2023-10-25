@@ -15,7 +15,8 @@ services:
       context: "./nginx"
       dockerfile: "Dockerfile.prod"
     ports:
-      - "80:80"
+      - "10000:10000"
+      - "10001:10001"
     networks:
       - user_defined_bridge
     env_file:
