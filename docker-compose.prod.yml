@@ -1,0 +1,41 @@
+version: "3.9"
+networks:
+  user_defined_bridge:
+    driver: bridge
+
+services:
+  # NGINX
+  nginx:
+    container_name: nginx
+    restart: unless-stopped
+    depends_on:
+      - map-web
+      - json-api
+    build:
+      context: "./nginx"
+      dockerfile: "Dockerfile.prod"
+    ports:
+      - "80:80"
+    networks:
+      - user_defined_bridge
+    env_file:
+      - ./nginx/.env
+
+  # map-web
+  map-web:
+    container_name: map-web
+    image: hunizm/great-job-map-web:latest
+    restart: always
+    networks:
+      - user_defined_bridge
+
+  # json-api
+  json-api:
+    container_name: json-api
+    image: vimagick/json-server
+    command: -H 0.0.0.0 -p 3000 -w database.json
+    volumes:
+      - /apps/great-job/json-api/json:/data
+    restart: always
+    networks:
+      - user_defined_bridge
